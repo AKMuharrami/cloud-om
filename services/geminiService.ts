@@ -4,7 +4,7 @@
 
 export const createWhatsAppLink = (packageName: string, price: string, downPayment: string) => {
   const phone = "96891477084"; 
-  const message = `مرحباً فريق Cloud 👋
+  const message = `السلام عليكمً فريق Cloud 👋
 أرغب بالاشتراك في *${packageName}* بسعر إجمالي *${price}*.
 
 أنا موافق على دفع المقدم *(${downPayment})* للبدء في المشروع.
@@ -16,7 +16,7 @@ https://api.whatsapp.com/send?phone=96338791
 
 export const createGeneralContactLink = () => {
   const phone = "96891477084";
-  const message = `مرحباً، لدي استفسار بخصوص خدمات تصميم المواقع...`;
+  const message = `السلام عليكمً، لدي استفسار بخصوص خدمات تصميم المواقع...`;
   
   return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
 };
