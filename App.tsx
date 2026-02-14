@@ -5,12 +5,12 @@ import { PACKAGES, PortfolioItem } from './types';
 import { createWhatsAppLink, createGeneralContactLink } from './services/geminiService';
 
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { id: '1', title: 'مقهى القهوة المختصة', category: 'Landing Page', image: 'https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?w=600&h=400&fit=crop' },
-  { id: '2', title: 'شركة عقارات', category: 'Business', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop' },
-  { id: '3', title: 'متجر عطور فاخرة', category: 'E-commerce', image: 'https://images.unsplash.com/photo-1595867355038-03824f8d4238?w=600&h=400&fit=crop' },
-  { id: '4', title: 'عيادة طبية', category: 'Business', image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop' },
-  { id: '5', title: 'مطعم برجر', category: 'Landing Page', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=400&fit=crop' },
-  { id: '6', title: 'مكتب محاماة', category: 'Corporate', image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=400&fit=crop' },
+  { id: '1', title: 'صفحة تعريفية/شخصية', category: 'Landing Page', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20143452.png', url:'https://akmuh.dev' },
+  { id: '2', title: 'شركة تغسيل سيارات', category: 'Business', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20072039.png', url:'https://al-muhannad.com' },
+  { id: '3', title: 'متجر فانيلا فاخر', category: 'E-commerce', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20082522.png', url:'https://van-om-v2.vercel.app' },
+  // { id: '4', title: 'عيادة طبية', category: 'Business', image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop' },
+  // { id: '5', title: 'مطعم برجر', category: 'Landing Page', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=400&fit=crop' },
+  // { id: '6', title: 'مكتب محاماة', category: 'Corporate', image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=400&fit=crop' },
 ];
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
             <a href="#features" onClick={(e) => scrollToSection(e, 'features')} className="hover:text-primary-600 transition-colors">المميزات</a>
-            {/* <a href="#portfolio" onClick={(e) => scrollToSection(e, 'portfolio')} className="hover:text-primary-600 transition-colors">أعمالنا</a> */}
+            <a href="#portfolio" onClick={(e) => scrollToSection(e, 'portfolio')} className="hover:text-primary-600 transition-colors">أعمالنا</a>
             <a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className="hover:text-primary-600 transition-colors">الباقات</a>
           </nav>
 
@@ -90,7 +90,7 @@ function App() {
         </section>
 
         {/* Portfolio Section */}
-        {/* <section id="portfolio" className="py-20 bg-white">
+        <section id="portfolio" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">أعمال نفخر بها</h2>
@@ -100,6 +100,7 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {PORTFOLIO_ITEMS.map((item) => (
                 <div key={item.id} className="group relative rounded-2xl overflow-hidden bg-gray-100 aspect-[4/3] shadow-sm hover:shadow-xl transition-all duration-300">
+                  <a href={item.url} target="_blank" >
                   <img 
                     src={item.image} 
                     alt={item.title} 
@@ -109,11 +110,12 @@ function App() {
                     <span className="text-primary-300 text-sm font-bold mb-1">{item.category}</span>
                     <h3 className="text-white text-xl font-bold">{item.title}</h3>
                   </div>
+                  </a>
                 </div>
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Pricing Section */}
         <section id="pricing" className="py-20 bg-gray-50 relative">
