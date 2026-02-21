@@ -7,7 +7,7 @@ import { createWhatsAppLink, createGeneralContactLink } from './services/geminiS
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
   { id: '1', title: 'صفحة تعريفية/شخصية', category: 'Landing Page', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20143452.png', url:'https://akmuh.dev' },
   { id: '2', title: 'شركة تغسيل سيارات', category: 'Business', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20072039.png', url:'https://al-muhannad.com' },
-  { id: '3', title: 'متجر فانيلا فاخر', category: 'E-commerce', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20082522.png', url:'https://van-om-v2.vercel.app' },
+  { id: '3', title: 'متجر فانيلا فاخر', category: 'E-commerce', image: 'https://hjrm8lbtnby37npy.public.blob.vercel-storage.com/Screenshot%202026-02-14%20082522.png', url:'https://vanillaom.com' },
   // { id: '4', title: 'عيادة طبية', category: 'Business', image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop' },
   // { id: '5', title: 'مطعم برجر', category: 'Landing Page', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=400&fit=crop' },
   // { id: '6', title: 'مكتب محاماة', category: 'Corporate', image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=400&fit=crop' },
